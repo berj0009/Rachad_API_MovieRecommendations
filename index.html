@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Recommendations</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="" id="main-page">
+				<section class="title">
+
+
+					<h1 class="movieRecommendations">Movie Recommendations</h1>
+				</section>
+			</div>
+
+			<div class="inputs">
+
+				<div class="search-div">
+					<img id="searchB" class="iconic iconic-md" data-src="img/magnifying-glass.svg" alt="Search" title="Search" />
+
+
+				</div>
+				<input type="text" id="search-input" placeholder="search" />
+				<div class="optionDiv">
+					<img id="optionImage" data-src="img/settings.svg" class="iconic iconic-md" alt="Prefrences button" title="Back" />
+				</div>
+
+			</div>
+			<div class="attribution">
+				<img src="img/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png" alt=" MDB" />
+			</div>
+		</header>
+		<div class="backHomeDiv">
+			<img id="back-button" data-src="img/caret.svg" class="iconic iconic-md hide" data-direction="left" alt="Back Button" title="Back" />
+		</div>
+
+		<div class="page" id="search-results">
+			<section class="title"></section>
+			<section class="content flex-container"></section>
+		</div>
+
+		<div class="page" id="recommend-results">
+			<section class="title"></section>
+			<section class="content  flex-container"></section>
+		</div>
+
+
+
+	</main>
+
+
+	<div class="overlay hide">&nbsp;</div>
+	<div class="modal">
+
+		<div class="modal-header">
+			<h2>Select Your Option</h2>
+		</div>
+
+
+		<div class="modal-radio">
+
+			<span><input type="radio" name="Option" value="movie" required />&nbsp;Movie</span>
+			<span><input type="radio" name="Option" value="tv" required />&nbsp;TV</span>
+
+		</div>
+
+
+		<button class="cancelButton">Cancel</button>
+		<button class="saveButton">Save</button>
+
+	</div>
+
+
+
+	<script src="js/iconic.min.js"></script>
+	<script src="js/key.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

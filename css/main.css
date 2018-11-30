@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: salmon;
+	font-family: lato;
+	font-family: Lato, Arial, sans-serif;
+}
+
+main {
+	background-color: salmon;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+	height: 500px;
+	/*    width: 80%;*/
+	margin: 100px auto auto auto;
+}
+
+body {
+	height: 100%;
+}
+
+h1 {
+	font-family: Lora, Times New Roman, serif;
+	text-align: center;
+	padding-bottom: 5rem;
+	font-size: 2rem;
+	font-family: lato;
+}
+
+/*
+#back-button{
+	width: 2rem;
+	margin: 20rem;
+*/
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+}
+
+.inputs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15%;
+
+}
+
+#searchB {
+	position: relative;
+	right: 37px;
+	top: 3px;
+	cursor: pointer;
+
+}
+
+#search-input {
+	width: 60%;
+	height: 29px;
+	text-align: center;
+	transition: width 0.4s ease-in-out;
+	color: salmon;
+
+}
+
+#search-input:hover {
+	width: 100%;
+	color: salmon;
+}
+
+.iconic-property-stroke,
+.iconic-property-fill {
+	fill: #345;
+	stroke: #269;
+}
+
+
+
+/*Add this class to the recommend and search results content sections in HTML*/
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movieCard {
+	width: 50rem;
+	height: auto;
+	margin: 1rem auto;
+	background-color: darksalmon;
+	color: white;
+}
+
+.imageSection {
+	float: left;
+	width: 12rem;
+	height: 17rem;
+	margin-right: 1rem;
+	overflow: hidden;
+}
+
+/*select only the images that are direct descendants of .imageSection*/
+.imageSection > img {
+	height: 17rem;
+	margin-right: 1rem;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	width: 500px;
+	height: 280px;
+	z-index: 200;
+	top: calc((100% - 280px)/2);
+	left: calc((100% - 500px)/2);
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #555;
+	background-color: #eee;
+}
+
+/* use these class names to show or hide the overlay and modal window */
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.off {
+	transform: translateY(-400%);
+}
+
+.on {
+	transform: translateY(0);
+}
+
+header {
+	width: 40rem;
+}
+
+.cancelButton,
+.saveButton {
+	width: 120px;
+	position: absolute;
+	border: none;
+	background-color: darksalmon;
+	color: white;
+	cursor: pointer;
+	padding: 0.25rem 2rem;
+	font-size: 1rem;
+}
+
+.saveButton {
+	bottom: 1rem;
+	right: 4rem;
+}
+
+.cancelButton {
+	bottom: 1rem;
+	left: 4rem;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: darksalmon;
+	color: white;
+	text-align: center;
+}
+
+.modal-radio {
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.attribution > img {
+	margin-left: 18rem;
+	width: 10%;
+}
